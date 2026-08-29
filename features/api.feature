@@ -15,5 +15,8 @@ Feature: API testing with Playwright and Cucumber
     And the JSON response should have property "booking.bookingdates.checkin" with value "2018-01-01"
     And the JSON response should have property "booking.bookingdates.checkout" with value "2019-01-01"
     And the JSON response should have property "booking.additionalneeds" with value "Breakfast"
+    And the JSON response should have property "booking.addon" with value "Breakfast"
+    And the JSON response should have property "booking.aiite" with value "Breakfast"
     And the JSON response should have property "booking.data" with value "Breakfast"
     And the JSON response should have property "booking.test" with value "Breakfast"
+
