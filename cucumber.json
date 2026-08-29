@@ -1,0 +1,154 @@
+[
+  {
+    "description": "  This feature demonstrates reusable API test steps and an API helper layer.",
+    "elements": [
+      {
+        "description": "",
+        "id": "api-testing-with-playwright-and-cucumber;create-a-booking-with-reusable-post-method",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Create a booking with reusable POST method",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the API base URL is loaded from env",
+            "match": {
+              "location": "step_definitions\\apiSteps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41654999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I POST \"/booking\" with payload file \"data/bookingPayload.json\"",
+            "match": {
+              "location": "step_definitions\\apiSteps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1206692500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the response status should be 200",
+            "match": {
+              "location": "step_definitions\\apiSteps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1250599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the JSON response should have property \"booking.firstname\" with value \"Jim\"",
+            "match": {
+              "location": "step_definitions\\apiSteps.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 962300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the JSON response should have property \"booking.lastname\" with value \"Brown\"",
+            "match": {
+              "location": "step_definitions\\apiSteps.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 726299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the JSON response should have property \"booking.totalprice\" with value \"111\"",
+            "match": {
+              "location": "step_definitions\\apiSteps.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 609699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the JSON response should have property \"booking.depositpaid\" with value \"true\"",
+            "match": {
+              "location": "step_definitions\\apiSteps.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 357899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the JSON response should have property \"booking.bookingdates.checkin\" with value \"2018-01-01\"",
+            "match": {
+              "location": "step_definitions\\apiSteps.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 310899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the JSON response should have property \"booking.bookingdates.checkout\" with value \"2019-01-01\"",
+            "match": {
+              "location": "step_definitions\\apiSteps.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 551300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "the JSON response should have property \"booking.additionalneeds\" with value \"Breakfast\"",
+            "match": {
+              "location": "step_definitions\\apiSteps.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 361399
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "api-testing-with-playwright-and-cucumber",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "API testing with Playwright and Cucumber",
+    "tags": [],
+    "uri": "features\\api.feature"
+  }
+]
